@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="splide" aria-labelledby="carousel-heading">
+      <h2 id="carousel-heading">My First Basic Slider</h2>
+    
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img style="max-width: -webkit-fill-available;" src="https://source.unsplash.com/1920x1080/?nature,water" alt="" />
+          </li>
+          <li class="splide__slide">
+            <img style="max-width: -webkit-fill-available;" src="https://source.unsplash.com/1920x1080/?nature,forest" alt="" />
+          </li>
+          <li class="splide__slide">
+            <img style="max-width: -webkit-fill-available;" src="https://source.unsplash.com/1920x1080/?nature,mountains" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".splide").mount();
+    });
+  </script>
+</html>
